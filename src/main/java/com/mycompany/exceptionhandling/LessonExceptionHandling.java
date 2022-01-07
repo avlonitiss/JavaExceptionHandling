@@ -15,9 +15,14 @@ public class LessonExceptionHandling {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        // a simple code not making an exception
-         int x = Integer.parseInt("332");
+        // a try catch block
+        try {
+         int x = Integer.parseInt("Spyros332");
          System.out.println("the number from string is: "+x);
+        }
+        catch (NumberFormatException nfe) {
+            System.out.println("not a valid input");
+        }
     }
     
 }
