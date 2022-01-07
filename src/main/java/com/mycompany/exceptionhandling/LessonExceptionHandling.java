@@ -18,14 +18,22 @@ public class LessonExceptionHandling {
         // a try catch block
         // Exceptions Hierarchy 
         // Object ->Throwable -> Exception ->RuntimeException ->NumberFormatException
+        // try catch from a method
+        
         try {
-         int x = Integer.parseInt("Spyros332");
-         System.out.println("the number from string is: "+x);
+         getInt();
         }
         catch (NumberFormatException nfe) {
             System.out.println("not a valid input. the error was: " + nfe);
             
         }
+        
+      
     }
-    
+     private static int getInt(){
+        int x = Integer.parseInt("Spyros332");
+         System.out.println("the number from string is: "+x);
+         return x;
+    }
+   
 }
