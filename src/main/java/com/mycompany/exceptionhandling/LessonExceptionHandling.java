@@ -18,7 +18,9 @@ public class LessonExceptionHandling {
         // a try catch block
         // Exceptions Hierarchy 
         // Object ->Throwable -> Exception ->RuntimeException ->NumberFormatException
-        // try catch from a method
+        // second catch block of different exception type
+        // *** after JAVA 7 you can have multiple excpetion types in a single catch
+        // using the | (Logical OR)
         
         try {
          getInt();
@@ -27,6 +29,10 @@ public class LessonExceptionHandling {
             System.out.println("not a valid input. the error was: " + nfe);
             
         }
+        catch (NullPointerException npe){
+            System.out.println("you have a null pointer exception");
+        }
+       
         
       
     }
