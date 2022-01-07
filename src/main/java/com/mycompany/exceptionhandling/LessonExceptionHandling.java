@@ -21,7 +21,7 @@ public class LessonExceptionHandling {
          System.out.println("the number from string is: "+x);
         }
         catch (NumberFormatException nfe) {
-            System.out.println("not a valid input");
+            System.out.println("not a valid input. the error was: " + nfe);
         }
     }
     
