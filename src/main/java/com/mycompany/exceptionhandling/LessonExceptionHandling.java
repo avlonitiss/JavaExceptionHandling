@@ -15,8 +15,9 @@ public class LessonExceptionHandling {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        // a simple code making an exception
-        int x = Integer.parseInt("Καλημέρα");
+        // a simple code not making an exception
+         int x = Integer.parseInt("332");
+         System.out.println("the number from string is: "+x);
     }
     
 }
