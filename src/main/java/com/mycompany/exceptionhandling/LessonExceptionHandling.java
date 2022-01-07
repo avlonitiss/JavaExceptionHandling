@@ -21,28 +21,22 @@ public class LessonExceptionHandling {
         // second catch block of different exception type
         // *** after JAVA 7 you can have multiple excpetion types in a single catch
         // using the | (Logical OR)
+        // ***  Finally exercise . what will print ?
         
-        try {
-         getInt();
-        }
-        catch (NumberFormatException nfe) {
-            System.out.println("not a valid input. the error was: " + nfe);
-            
-        }
-        catch (NullPointerException npe){
-            System.out.println("you have a null pointer exception");
-        }
-        finally{
-            System.out.println("\n\n this will be executed aLWAYS. is in finally block");
-        }
-       
+        
+        System.out.println("Try the finally statement. It will print "+getInt());
         
       
     }
      private static int getInt(){
-        int x = Integer.parseInt("Spyros332");
-         System.out.println("the number from string is: "+x);
-         return x;
+        try {
+         return 50;
+        }
+        catch (NumberFormatException nfe) {
+            return 100;
+        }
+        finally{ 
+         return 200;
     }
-   
+     }
 }
