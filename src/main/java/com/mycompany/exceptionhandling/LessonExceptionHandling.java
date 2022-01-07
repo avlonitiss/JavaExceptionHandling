@@ -32,6 +32,9 @@ public class LessonExceptionHandling {
         catch (NullPointerException npe){
             System.out.println("you have a null pointer exception");
         }
+        finally{
+            System.out.println("\n\n this will be executed aLWAYS. is in finally block");
+        }
        
         
       
