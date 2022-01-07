@@ -16,12 +16,15 @@ public class LessonExceptionHandling {
     public static void main(String[] args) {
         // TODO code application logic here
         // a try catch block
+        // Exceptions Hierarchy 
+        // Object ->Throwable -> Exception ->RuntimeException ->NumberFormatException
         try {
          int x = Integer.parseInt("Spyros332");
          System.out.println("the number from string is: "+x);
         }
         catch (NumberFormatException nfe) {
             System.out.println("not a valid input. the error was: " + nfe);
+            
         }
     }
     
